@@ -7,7 +7,8 @@ public class digitSum
 {
     public void main()
     {
-        sum(30,40);
+        System.out.println("Welcome this program will add the two number that you provide.\n");
+		sum(21,68);
     }
     void sum(int n, int s)
     {
