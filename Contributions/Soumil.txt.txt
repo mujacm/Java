@@ -1,0 +1,3 @@
+1. Write a program to check if the number is prime.
+2. write a prpgram to check if the number is even.
+3. Write a program to check if the number is a palindrome.
