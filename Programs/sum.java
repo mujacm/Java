@@ -18,6 +18,7 @@ public class digitSum
             sum+= (t/10);
             t/=10;
         }
-        System.out.println("Sum of digits of "+n+" is = "+sum);
+       
+       System.out.print
     }
 }
