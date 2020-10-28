@@ -15,3 +15,5 @@ Add your name and link to your GitHub account below after you have contributed t
 2. Ishan Kumar [GitHub Account](https://www.github.com/IshanKumar2001)
 3. Abhirup Chakraborty [GitHub Account](https://www.github.com/yoloabhi)
 4. Anmol Srivastava [GitHub Account](https://www.github.com/anmolsri150)
+ 
+raina jangid-github is the "facebook" of git
