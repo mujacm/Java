@@ -16,7 +16,7 @@ public class palindrome
         {
             st2=st2+ st.charAt(i);
         }
-        if(st==st2)
+        if(st.equals(st2))
             System.out.println(st+" is Palindrome.");
         else
             System.out.println(st+" is not Palindrome.");
