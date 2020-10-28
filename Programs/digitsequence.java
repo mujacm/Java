@@ -26,7 +26,19 @@ public class evenOddDigit
                 on= (on*10)+(t%10);
             t/=10;
         }
-        System.out.println("Number using odd digits : "+on);
-        System.out.println("Number using even digits : "+en);
+        System.out.println("Number using odd digits : "+reverse(on));
+        System.out.println("Number using even digits : "+reverse(en));
+        System.out.println("Larger number : "+Math.max(reverse(on),reverse(en)));
+    }
+    int reverse(int s)
+    {
+        int r,rev=0;
+        while(s>0)
+        {
+            r=s%10;
+            rev=rev*10+r;
+            s=s/10;
+        }
+        return rev;
     }
 }
