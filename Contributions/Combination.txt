@@ -1,0 +1,28 @@
+/*
+ * Program to print all probable combinations of a 3 letter word
+ */
+import java.util.*;
+public class Combination
+{
+    public void main()
+    {
+        String str;
+        int i,j,p,k;
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a three letter word");
+        str=in.next();
+        p=str.length();
+        System.out.println("The required combinations of the word are : ");
+        for(i=0;i<p;i++)
+        {
+            for(j=0;j<p;j++)
+            {
+                for(k=0;k<p;k++)
+                {
+                    if(i!=j && j!=k && k!=i)
+                    System.out.println(str.charAt(i)+""+str.charAt(j)+""+str.charAt(k));
+                }
+            }
+        }
+    }
+}

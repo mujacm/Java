@@ -13,6 +13,14 @@ public class palindrome
         int st=s.nextLine();
 int st2=reverse(st);
         if(st==st2)
+        System.out.print("Enter a word to check if it is palindrome or not : ");
+        String st =s.nextLine();
+        String st2="";
+        for(int i=st.length()-1;i>=0;i--)
+        {
+            st2=st2+st.charAt(i);
+        }
+        if(st2.equalsIgnoreCase(st))
             System.out.println(st+" is Palindrome.");
         else
             System.out.println(st+" is not Palindrome.");
@@ -27,4 +35,4 @@ s=s/10;
 }returm sm;
 }
 }
-
+}
