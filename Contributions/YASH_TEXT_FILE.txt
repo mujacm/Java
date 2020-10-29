@@ -1,0 +1,2 @@
+WAP to read user input and store it in a file.
+WAP to read stored input from a file and display it,
