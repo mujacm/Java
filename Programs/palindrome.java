@@ -10,15 +10,21 @@ public class palindrome
     {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter a number to check if it is palindrome or not : ");
-        String st =s.nextLine();
-        String st2="";
-        for(int i=st.length()-1;i>=0;i--)
-        {
-            st2=st2+ st.charAt(i);
-        }
+        int st=s.nextLine();
+int st2=reverse(st);
         if(st==st2)
             System.out.println(st+" is Palindrome.");
         else
             System.out.println(st+" is not Palindrome.");
     }
+int reverse(int s)
+{int t,sm;
+while(s>0)
+{
+t=s%10;
+sm=sm*10+t;
+s=s/10;
+}returm sm;
 }
+}
+
