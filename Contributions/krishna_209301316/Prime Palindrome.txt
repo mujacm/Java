@@ -1,0 +1,40 @@
+/*
+   Program to print Prime Palindrome numbers between two integers m and n
+*/
+
+import java.util.*;
+public class PrimePal
+{
+   public void main()
+    {
+    Scanner in=new Scanner(System.in);
+    int i,k=0,r=0,n,p=0,m;
+    System.out.println("Enter value of m : ");
+    m=in.nextInt();
+    System.out.println("Enter value of n : ");
+    n=in.nextInt();
+    System.out.println("Prime palindrome numbers between "+m+" and "+n+" are : ");
+    for(i=m;i<=n;i++)
+    {
+        m=i;r=0;
+        p=i;
+        do
+        {
+            r=r*10 + (m%10);
+            m/=10;
+        }while(m!=0);
+        if(r==p)
+        {
+            for(i=1;i<=p;i++)
+            {
+                if(p%i==0)
+                k+=1;
+            }
+            if(k==2)
+                System.out.print(p+",");
+                k=0;
+            
+        }
+    }
+    }
+}
