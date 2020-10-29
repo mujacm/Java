@@ -1,0 +1,31 @@
+/*
+ * Program to find roots of a quadratic equation
+ */
+import java.util.*;
+public class Quadratic
+{
+    public static void main(String args[])
+    {
+        int a,b,c;
+        Scanner in=new Scanner(System.in);
+        Quadratic obj=new Quadratic();
+        System.out.println("Enter value of a,b and c");
+        a=in.nextInt();
+        b=in.nextInt();
+        c=in.nextInt();
+        obj.roots(a,b,c);
+    }
+    void roots(int a,int b,int c)
+    {
+        double d,r1,r2;
+        d=Math.sqrt(b*b-4*a*c);
+        if((d>0) || (d==0))
+        {
+            r1=(-b + d)/(2*a);
+            r2=(-b-d)/(2*a);
+            System.out.println("Roots are "+r1+" and "+r2);
+        }
+        else
+        System.out.println("Roots are unequal and imaginary");
+    }
+}
