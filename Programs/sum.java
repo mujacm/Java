@@ -9,7 +9,7 @@ public class digitSum
     {
         sum(30,40);
     }
-int void sum(int s,int t)
+long void sum(long s, long n)
 {
 System.out.println(s+n);
 }
